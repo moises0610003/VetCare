@@ -1,0 +1,142 @@
+[
+  {
+    "nombre": "Consulta general",
+    "descripcion": "Evaluación clínica integral",
+    "precio": 70,
+    "duracion_minutos": 30,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Vacunación",
+    "descripcion": "Aplicación y control de vacunas",
+    "precio": 55,
+    "duracion_minutos": 20,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Desparasitación",
+    "descripcion": "Control antiparasitario",
+    "precio": 35,
+    "duracion_minutos": 20,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Consulta dermatológica",
+    "descripcion": "Evaluación de piel y pelaje",
+    "precio": 95,
+    "duracion_minutos": 40,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Baño y peluquería",
+    "descripcion": "Higiene y corte según raza",
+    "precio": 65,
+    "duracion_minutos": 60,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Emergencia",
+    "descripcion": "Atención prioritaria",
+    "precio": 160,
+    "duracion_minutos": 45,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Profilaxis dental",
+    "descripcion": "Limpieza dental preventiva",
+    "precio": 140,
+    "duracion_minutos": 60,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Cirugía menor",
+    "descripcion": "Procedimiento quirúrgico ambulatorio",
+    "precio": 280,
+    "duracion_minutos": 90,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Ecografía",
+    "descripcion": "Diagnóstico por imagen",
+    "precio": 180,
+    "duracion_minutos": 45,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Radiografía",
+    "descripcion": "Estudio radiológico",
+    "precio": 150,
+    "duracion_minutos": 30,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Hospitalización",
+    "descripcion": "Cuidado y monitoreo diario",
+    "precio": 120,
+    "duracion_minutos": 1440,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Consulta nutricional",
+    "descripcion": "Plan alimenticio personalizado",
+    "precio": 85,
+    "duracion_minutos": 30,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Corte de uñas",
+    "descripcion": "Higiene básica",
+    "precio": 25,
+    "duracion_minutos": 15,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Microchip",
+    "descripcion": "Identificación permanente",
+    "precio": 90,
+    "duracion_minutos": 20,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Control geriátrico",
+    "descripcion": "Chequeo integral senior",
+    "precio": 110,
+    "duracion_minutos": 45,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Hemograma",
+    "descripcion": "Análisis de sangre completo",
+    "precio": 75,
+    "duracion_minutos": 20,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Examen coproparasitario",
+    "descripcion": "Análisis de heces",
+    "precio": 45,
+    "duracion_minutos": 15,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Control posoperatorio",
+    "descripcion": "Revisión después de cirugía",
+    "precio": 60,
+    "duracion_minutos": 20,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Eutanasia humanitaria",
+    "descripcion": "Procedimiento con acompañamiento",
+    "precio": 200,
+    "duracion_minutos": 45,
+    "estado": "activo"
+  },
+  {
+    "nombre": "Certificado de salud",
+    "descripcion": "Evaluación para viaje",
+    "precio": 80,
+    "duracion_minutos": 25,
+    "estado": "activo"
+  }
+]

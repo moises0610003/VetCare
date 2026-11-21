@@ -1,0 +1,1667 @@
+[
+  {
+    "cliente_dni": "70123456",
+    "mascota_nombre": "Luna",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-10-12",
+    "proxima_dosis": "2027-10-12",
+    "observaciones": "Refuerzo anual."
+  },
+  {
+    "cliente_dni": "70123456",
+    "mascota_nombre": "Luna",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-10-12",
+    "proxima_dosis": "2027-10-12",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "70234567",
+    "mascota_nombre": "Max",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-11-21",
+    "proxima_dosis": "2026-11-21",
+    "observaciones": "Refuerzo pendiente."
+  },
+  {
+    "cliente_dni": "70345678",
+    "mascota_nombre": "Milo",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-05-20",
+    "proxima_dosis": "2027-05-20",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "70345678",
+    "mascota_nombre": "Milo",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-05-20",
+    "proxima_dosis": "2027-05-20",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "70456789",
+    "mascota_nombre": "Nala",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-06-18",
+    "proxima_dosis": "2027-06-18",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "70567890",
+    "mascota_nombre": "Rocky",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-04-25",
+    "proxima_dosis": "2027-04-25",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "70678901",
+    "mascota_nombre": "Kiara",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-08-10",
+    "proxima_dosis": "2027-08-10",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "70789012",
+    "mascota_nombre": "Simba",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-03-12",
+    "proxima_dosis": "2027-03-12",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "70890123",
+    "mascota_nombre": "Toby",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-12-02",
+    "proxima_dosis": "2026-12-02",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "70901234",
+    "mascota_nombre": "Olivia",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-09-06",
+    "proxima_dosis": "2026-12-06",
+    "observaciones": "Segunda dosis programada."
+  },
+  {
+    "cliente_dni": "71012345",
+    "mascota_nombre": "Bruno",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-07-01",
+    "proxima_dosis": "2027-07-01",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "71234567",
+    "mascota_nombre": "Bimba",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-01-16",
+    "proxima_dosis": "2027-01-16",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "71345678",
+    "mascota_nombre": "Felix",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-04-25",
+    "proxima_dosis": "2027-04-25",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "71456789",
+    "mascota_nombre": "Kira",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-10-05",
+    "proxima_dosis": "2027-10-05",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "71567890",
+    "mascota_nombre": "Lola",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-08-12",
+    "proxima_dosis": "2027-08-12",
+    "observaciones": ""
+  },
+  {
+    "cliente_dni": "80000066",
+    "mascota_nombre": "Frida",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-05-17",
+    "proxima_dosis": "2026-05-17",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000067",
+    "mascota_nombre": "Paco",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-06-18",
+    "proxima_dosis": "2027-06-18",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000068",
+    "mascota_nombre": "Noa",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-07-19",
+    "proxima_dosis": "2026-07-19",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000069",
+    "mascota_nombre": "Bowie",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-08-20",
+    "proxima_dosis": "2027-08-20",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000070",
+    "mascota_nombre": "Uma",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-09-21",
+    "proxima_dosis": "2026-09-21",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000071",
+    "mascota_nombre": "Sam",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-10-22",
+    "proxima_dosis": "2027-10-22",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000072",
+    "mascota_nombre": "Arya",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-11-23",
+    "proxima_dosis": "2026-11-23",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000073",
+    "mascota_nombre": "Doki",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-12-24",
+    "proxima_dosis": "2027-12-24",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000074",
+    "mascota_nombre": "Greta",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-01-25",
+    "proxima_dosis": "2026-01-25",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000075",
+    "mascota_nombre": "Polo",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-02-26",
+    "proxima_dosis": "2027-02-26",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000076",
+    "mascota_nombre": "Vera",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-03-27",
+    "proxima_dosis": "2026-03-27",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000077",
+    "mascota_nombre": "Leo",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-04-01",
+    "proxima_dosis": "2027-04-01",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000078",
+    "mascota_nombre": "Suki",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-05-02",
+    "proxima_dosis": "2026-05-02",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000079",
+    "mascota_nombre": "Chester",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-06-03",
+    "proxima_dosis": "2027-06-03",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000080",
+    "mascota_nombre": "Tina",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-07-04",
+    "proxima_dosis": "2026-07-04",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000081",
+    "mascota_nombre": "Boris",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-08-05",
+    "proxima_dosis": "2027-08-05",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000082",
+    "mascota_nombre": "Maggie",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-09-06",
+    "proxima_dosis": "2026-09-06",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000083",
+    "mascota_nombre": "Pipo",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-10-07",
+    "proxima_dosis": "2027-10-07",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000084",
+    "mascota_nombre": "Duna",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-11-08",
+    "proxima_dosis": "2026-11-08",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000085",
+    "mascota_nombre": "Teo",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-12-09",
+    "proxima_dosis": "2027-12-09",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000086",
+    "mascota_nombre": "Rita",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-01-10",
+    "proxima_dosis": "2026-01-10",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000087",
+    "mascota_nombre": "Koda",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-02-11",
+    "proxima_dosis": "2027-02-11",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000088",
+    "mascota_nombre": "Ayla",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-03-12",
+    "proxima_dosis": "2026-03-12",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000089",
+    "mascota_nombre": "Momo",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-04-13",
+    "proxima_dosis": "2027-04-13",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000090",
+    "mascota_nombre": "Runa",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-05-14",
+    "proxima_dosis": "2026-05-14",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000091",
+    "mascota_nombre": "Chispa",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-06-15",
+    "proxima_dosis": "2027-06-15",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000092",
+    "mascota_nombre": "Kenzo",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-07-16",
+    "proxima_dosis": "2026-07-16",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000093",
+    "mascota_nombre": "Pepa",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-08-17",
+    "proxima_dosis": "2027-08-17",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000094",
+    "mascota_nombre": "Canela",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-09-18",
+    "proxima_dosis": "2026-09-18",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000095",
+    "mascota_nombre": "Thor",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-10-19",
+    "proxima_dosis": "2027-10-19",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000096",
+    "mascota_nombre": "Mía",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-11-20",
+    "proxima_dosis": "2026-11-20",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000097",
+    "mascota_nombre": "Zeus",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-12-21",
+    "proxima_dosis": "2027-12-21",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000098",
+    "mascota_nombre": "Sasha",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-01-22",
+    "proxima_dosis": "2026-01-22",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000099",
+    "mascota_nombre": "Rocco",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-02-23",
+    "proxima_dosis": "2027-02-23",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000100",
+    "mascota_nombre": "Pelusa",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-03-24",
+    "proxima_dosis": "2026-03-24",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000101",
+    "mascota_nombre": "Dante",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-04-25",
+    "proxima_dosis": "2027-04-25",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000102",
+    "mascota_nombre": "Maya",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-05-26",
+    "proxima_dosis": "2026-05-26",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000103",
+    "mascota_nombre": "Apolo",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-06-27",
+    "proxima_dosis": "2027-06-27",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000104",
+    "mascota_nombre": "Nina",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-07-01",
+    "proxima_dosis": "2026-07-01",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000105",
+    "mascota_nombre": "Balú",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-08-02",
+    "proxima_dosis": "2027-08-02",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000106",
+    "mascota_nombre": "Cira",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-09-03",
+    "proxima_dosis": "2026-09-03",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000107",
+    "mascota_nombre": "Benji",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-10-04",
+    "proxima_dosis": "2027-10-04",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000108",
+    "mascota_nombre": "Mora",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-11-05",
+    "proxima_dosis": "2026-11-05",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000109",
+    "mascota_nombre": "Gaia",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-12-06",
+    "proxima_dosis": "2027-12-06",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000110",
+    "mascota_nombre": "Otto",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-01-07",
+    "proxima_dosis": "2026-01-07",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000111",
+    "mascota_nombre": "Lía",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-02-08",
+    "proxima_dosis": "2027-02-08",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000112",
+    "mascota_nombre": "Rex",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-03-09",
+    "proxima_dosis": "2026-03-09",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000113",
+    "mascota_nombre": "Frida",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-04-10",
+    "proxima_dosis": "2027-04-10",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000114",
+    "mascota_nombre": "Paco",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-05-11",
+    "proxima_dosis": "2026-05-11",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000115",
+    "mascota_nombre": "Noa",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-06-12",
+    "proxima_dosis": "2027-06-12",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000116",
+    "mascota_nombre": "Bowie",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-07-13",
+    "proxima_dosis": "2026-07-13",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000117",
+    "mascota_nombre": "Uma",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-08-14",
+    "proxima_dosis": "2027-08-14",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000118",
+    "mascota_nombre": "Sam",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-09-15",
+    "proxima_dosis": "2026-09-15",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000119",
+    "mascota_nombre": "Arya",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-10-16",
+    "proxima_dosis": "2027-10-16",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000120",
+    "mascota_nombre": "Doki II",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-11-17",
+    "proxima_dosis": "2026-11-17",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000121",
+    "mascota_nombre": "Greta II",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-12-18",
+    "proxima_dosis": "2027-12-18",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000122",
+    "mascota_nombre": "Polo II",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-01-19",
+    "proxima_dosis": "2026-01-19",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000123",
+    "mascota_nombre": "Vera II",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-02-20",
+    "proxima_dosis": "2027-02-20",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000124",
+    "mascota_nombre": "Leo II",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-03-21",
+    "proxima_dosis": "2026-03-21",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000125",
+    "mascota_nombre": "Suki II",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-04-22",
+    "proxima_dosis": "2027-04-22",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000126",
+    "mascota_nombre": "Chester II",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-05-23",
+    "proxima_dosis": "2026-05-23",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000127",
+    "mascota_nombre": "Tina II",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-06-24",
+    "proxima_dosis": "2027-06-24",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000128",
+    "mascota_nombre": "Boris II",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-07-25",
+    "proxima_dosis": "2026-07-25",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000129",
+    "mascota_nombre": "Maggie II",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-08-26",
+    "proxima_dosis": "2027-08-26",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000130",
+    "mascota_nombre": "Pipo II",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-09-27",
+    "proxima_dosis": "2026-09-27",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000131",
+    "mascota_nombre": "Duna II",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-10-01",
+    "proxima_dosis": "2027-10-01",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000132",
+    "mascota_nombre": "Teo II",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-11-02",
+    "proxima_dosis": "2026-11-02",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000133",
+    "mascota_nombre": "Rita II",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-12-03",
+    "proxima_dosis": "2027-12-03",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000134",
+    "mascota_nombre": "Koda II",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-01-04",
+    "proxima_dosis": "2026-01-04",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000135",
+    "mascota_nombre": "Ayla II",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-02-05",
+    "proxima_dosis": "2027-02-05",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000136",
+    "mascota_nombre": "Momo II",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-03-06",
+    "proxima_dosis": "2026-03-06",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000137",
+    "mascota_nombre": "Runa II",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-04-07",
+    "proxima_dosis": "2027-04-07",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000138",
+    "mascota_nombre": "Chispa II",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-05-08",
+    "proxima_dosis": "2026-05-08",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000139",
+    "mascota_nombre": "Kenzo II",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-06-09",
+    "proxima_dosis": "2027-06-09",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000140",
+    "mascota_nombre": "Pepa II",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-07-10",
+    "proxima_dosis": "2026-07-10",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000141",
+    "mascota_nombre": "Canela II",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-08-11",
+    "proxima_dosis": "2027-08-11",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000142",
+    "mascota_nombre": "Thor II",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-09-12",
+    "proxima_dosis": "2026-09-12",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000143",
+    "mascota_nombre": "Mía II",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-10-13",
+    "proxima_dosis": "2027-10-13",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000144",
+    "mascota_nombre": "Zeus II",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-11-14",
+    "proxima_dosis": "2026-11-14",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000145",
+    "mascota_nombre": "Sasha II",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-12-15",
+    "proxima_dosis": "2027-12-15",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000146",
+    "mascota_nombre": "Rocco II",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-01-16",
+    "proxima_dosis": "2026-01-16",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000147",
+    "mascota_nombre": "Pelusa II",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-02-17",
+    "proxima_dosis": "2027-02-17",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000148",
+    "mascota_nombre": "Dante II",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-03-18",
+    "proxima_dosis": "2026-03-18",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000149",
+    "mascota_nombre": "Maya II",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-04-19",
+    "proxima_dosis": "2027-04-19",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000150",
+    "mascota_nombre": "Apolo II",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-05-20",
+    "proxima_dosis": "2026-05-20",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000151",
+    "mascota_nombre": "Nina II",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-06-21",
+    "proxima_dosis": "2027-06-21",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000152",
+    "mascota_nombre": "Balú II",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-07-22",
+    "proxima_dosis": "2026-07-22",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000153",
+    "mascota_nombre": "Cira II",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-08-23",
+    "proxima_dosis": "2027-08-23",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000154",
+    "mascota_nombre": "Benji II",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-09-24",
+    "proxima_dosis": "2026-09-24",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000155",
+    "mascota_nombre": "Mora II",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-10-25",
+    "proxima_dosis": "2027-10-25",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000156",
+    "mascota_nombre": "Gaia II",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-11-26",
+    "proxima_dosis": "2026-11-26",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000157",
+    "mascota_nombre": "Otto II",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-12-27",
+    "proxima_dosis": "2027-12-27",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000158",
+    "mascota_nombre": "Lía II",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-01-01",
+    "proxima_dosis": "2026-01-01",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000159",
+    "mascota_nombre": "Rex II",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-02-02",
+    "proxima_dosis": "2027-02-02",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000160",
+    "mascota_nombre": "Frida II",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-03-03",
+    "proxima_dosis": "2026-03-03",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000161",
+    "mascota_nombre": "Paco II",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-04-04",
+    "proxima_dosis": "2027-04-04",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000162",
+    "mascota_nombre": "Noa II",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-05-05",
+    "proxima_dosis": "2026-05-05",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000163",
+    "mascota_nombre": "Bowie II",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-06-06",
+    "proxima_dosis": "2027-06-06",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000164",
+    "mascota_nombre": "Uma II",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-07-07",
+    "proxima_dosis": "2026-07-07",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000165",
+    "mascota_nombre": "Sam II",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-08-08",
+    "proxima_dosis": "2027-08-08",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000166",
+    "mascota_nombre": "Arya II",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-09-09",
+    "proxima_dosis": "2026-09-09",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000167",
+    "mascota_nombre": "Doki II",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-10-10",
+    "proxima_dosis": "2027-10-10",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000168",
+    "mascota_nombre": "Greta II",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-11-11",
+    "proxima_dosis": "2026-11-11",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000169",
+    "mascota_nombre": "Polo II",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-12-12",
+    "proxima_dosis": "2027-12-12",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000170",
+    "mascota_nombre": "Vera II",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-01-13",
+    "proxima_dosis": "2026-01-13",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000171",
+    "mascota_nombre": "Leo II",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-02-14",
+    "proxima_dosis": "2027-02-14",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000172",
+    "mascota_nombre": "Suki II",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-03-15",
+    "proxima_dosis": "2026-03-15",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000173",
+    "mascota_nombre": "Chester II",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-04-16",
+    "proxima_dosis": "2027-04-16",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000174",
+    "mascota_nombre": "Tina II",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-05-17",
+    "proxima_dosis": "2026-05-17",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000175",
+    "mascota_nombre": "Boris II",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-06-18",
+    "proxima_dosis": "2027-06-18",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000176",
+    "mascota_nombre": "Maggie II",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-07-19",
+    "proxima_dosis": "2026-07-19",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000177",
+    "mascota_nombre": "Pipo II",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-08-20",
+    "proxima_dosis": "2027-08-20",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000178",
+    "mascota_nombre": "Duna II",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-09-21",
+    "proxima_dosis": "2026-09-21",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000179",
+    "mascota_nombre": "Teo II",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-10-22",
+    "proxima_dosis": "2027-10-22",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "70123456",
+    "mascota_nombre": "Rita II",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-11-23",
+    "proxima_dosis": "2026-11-23",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "70234567",
+    "mascota_nombre": "Koda II",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-12-24",
+    "proxima_dosis": "2027-12-24",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "70345678",
+    "mascota_nombre": "Ayla II",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-01-25",
+    "proxima_dosis": "2026-01-25",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "70456789",
+    "mascota_nombre": "Momo II",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-02-26",
+    "proxima_dosis": "2027-02-26",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "70567890",
+    "mascota_nombre": "Runa II",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-03-27",
+    "proxima_dosis": "2026-03-27",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "70678901",
+    "mascota_nombre": "Chispa II",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-04-01",
+    "proxima_dosis": "2027-04-01",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "70789012",
+    "mascota_nombre": "Kenzo II",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-05-02",
+    "proxima_dosis": "2026-05-02",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "70890123",
+    "mascota_nombre": "Pepa II",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-06-03",
+    "proxima_dosis": "2027-06-03",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "70901234",
+    "mascota_nombre": "Canela II",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-07-04",
+    "proxima_dosis": "2026-07-04",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "71012345",
+    "mascota_nombre": "Thor II",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-08-05",
+    "proxima_dosis": "2027-08-05",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "71123456",
+    "mascota_nombre": "Mía II",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-09-06",
+    "proxima_dosis": "2026-09-06",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "71234567",
+    "mascota_nombre": "Zeus II",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-10-07",
+    "proxima_dosis": "2027-10-07",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "71345678",
+    "mascota_nombre": "Sasha II",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-11-08",
+    "proxima_dosis": "2026-11-08",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "71456789",
+    "mascota_nombre": "Rocco II",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-12-09",
+    "proxima_dosis": "2027-12-09",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "71567890",
+    "mascota_nombre": "Pelusa II",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-01-10",
+    "proxima_dosis": "2026-01-10",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000015",
+    "mascota_nombre": "Dante II",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-02-11",
+    "proxima_dosis": "2027-02-11",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000016",
+    "mascota_nombre": "Maya II",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-03-12",
+    "proxima_dosis": "2026-03-12",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000017",
+    "mascota_nombre": "Apolo II",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-04-13",
+    "proxima_dosis": "2027-04-13",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000018",
+    "mascota_nombre": "Nina II",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-05-14",
+    "proxima_dosis": "2026-05-14",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000019",
+    "mascota_nombre": "Balú II",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-06-15",
+    "proxima_dosis": "2027-06-15",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000020",
+    "mascota_nombre": "Cira II",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-07-16",
+    "proxima_dosis": "2026-07-16",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000021",
+    "mascota_nombre": "Benji II",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-08-17",
+    "proxima_dosis": "2027-08-17",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000022",
+    "mascota_nombre": "Mora II",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-09-18",
+    "proxima_dosis": "2026-09-18",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000023",
+    "mascota_nombre": "Gaia II",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-10-19",
+    "proxima_dosis": "2027-10-19",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000024",
+    "mascota_nombre": "Otto II",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-11-20",
+    "proxima_dosis": "2026-11-20",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000025",
+    "mascota_nombre": "Lía II",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-12-21",
+    "proxima_dosis": "2027-12-21",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000026",
+    "mascota_nombre": "Rex II",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-01-22",
+    "proxima_dosis": "2026-01-22",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000027",
+    "mascota_nombre": "Frida II",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-02-23",
+    "proxima_dosis": "2027-02-23",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000028",
+    "mascota_nombre": "Paco II",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-03-24",
+    "proxima_dosis": "2026-03-24",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000029",
+    "mascota_nombre": "Noa II",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-04-25",
+    "proxima_dosis": "2027-04-25",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000030",
+    "mascota_nombre": "Bowie II",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-05-26",
+    "proxima_dosis": "2026-05-26",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000031",
+    "mascota_nombre": "Uma II",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-06-27",
+    "proxima_dosis": "2027-06-27",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000032",
+    "mascota_nombre": "Sam II",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-07-01",
+    "proxima_dosis": "2026-07-01",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000033",
+    "mascota_nombre": "Arya II",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-08-02",
+    "proxima_dosis": "2027-08-02",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000034",
+    "mascota_nombre": "Doki II",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-09-03",
+    "proxima_dosis": "2026-09-03",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000035",
+    "mascota_nombre": "Greta II",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-10-04",
+    "proxima_dosis": "2027-10-04",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000036",
+    "mascota_nombre": "Polo II",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-11-05",
+    "proxima_dosis": "2026-11-05",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000037",
+    "mascota_nombre": "Vera II",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-12-06",
+    "proxima_dosis": "2027-12-06",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000038",
+    "mascota_nombre": "Leo II",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-01-07",
+    "proxima_dosis": "2026-01-07",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000039",
+    "mascota_nombre": "Suki II",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-02-08",
+    "proxima_dosis": "2027-02-08",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000040",
+    "mascota_nombre": "Chester II",
+    "veterinario_dni": "40678901",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-03-09",
+    "proxima_dosis": "2026-03-09",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000041",
+    "mascota_nombre": "Tina II",
+    "veterinario_dni": "40000006",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-04-10",
+    "proxima_dosis": "2027-04-10",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000042",
+    "mascota_nombre": "Boris II",
+    "veterinario_dni": "40000007",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-05-11",
+    "proxima_dosis": "2026-05-11",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000043",
+    "mascota_nombre": "Maggie II",
+    "veterinario_dni": "40000008",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-06-12",
+    "proxima_dosis": "2027-06-12",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000044",
+    "mascota_nombre": "Pipo II",
+    "veterinario_dni": "40000009",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-07-13",
+    "proxima_dosis": "2026-07-13",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000045",
+    "mascota_nombre": "Duna II",
+    "veterinario_dni": "40000010",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2026-08-14",
+    "proxima_dosis": "2027-08-14",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000046",
+    "mascota_nombre": "Teo II",
+    "veterinario_dni": "40000011",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2025-09-15",
+    "proxima_dosis": "2026-09-15",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000047",
+    "mascota_nombre": "Rita II",
+    "veterinario_dni": "40000012",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2026-10-16",
+    "proxima_dosis": "2027-10-16",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000048",
+    "mascota_nombre": "Koda II",
+    "veterinario_dni": "40000013",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2025-11-17",
+    "proxima_dosis": "2026-11-17",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000049",
+    "mascota_nombre": "Ayla II",
+    "veterinario_dni": "40000014",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2026-12-18",
+    "proxima_dosis": "2027-12-18",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000050",
+    "mascota_nombre": "Momo II",
+    "veterinario_dni": "40123456",
+    "nombre_vacuna": "Séxtuple canina",
+    "fecha_aplicacion": "2025-01-19",
+    "proxima_dosis": "2026-01-19",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000051",
+    "mascota_nombre": "Runa II",
+    "veterinario_dni": "40234567",
+    "nombre_vacuna": "Antirrábica",
+    "fecha_aplicacion": "2026-02-20",
+    "proxima_dosis": "2027-02-20",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000052",
+    "mascota_nombre": "Chispa II",
+    "veterinario_dni": "40345678",
+    "nombre_vacuna": "Triple felina",
+    "fecha_aplicacion": "2025-03-21",
+    "proxima_dosis": "2026-03-21",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000053",
+    "mascota_nombre": "Kenzo II",
+    "veterinario_dni": "40456789",
+    "nombre_vacuna": "Bordetella",
+    "fecha_aplicacion": "2026-04-22",
+    "proxima_dosis": "2027-04-22",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  },
+  {
+    "cliente_dni": "80000054",
+    "mascota_nombre": "Pepa II",
+    "veterinario_dni": "40567890",
+    "nombre_vacuna": "Leucemia felina",
+    "fecha_aplicacion": "2025-05-23",
+    "proxima_dosis": "2026-05-23",
+    "observaciones": "Vacuna ficticia registrada para pruebas."
+  }
+]

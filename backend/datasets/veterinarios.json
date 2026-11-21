@@ -1,0 +1,137 @@
+[
+  {
+    "nombres": "Valeria",
+    "apellidos": "Gómez",
+    "dni": "40123456",
+    "telefono": "999111222",
+    "correo": "valeria@vetcare.test",
+    "especialidad": "Medicina general",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Sebastián",
+    "apellidos": "Ruiz",
+    "dni": "40234567",
+    "telefono": "999222333",
+    "correo": "sebastian@vetcare.test",
+    "especialidad": "Dermatología",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Andrea",
+    "apellidos": "Morales",
+    "dni": "40345678",
+    "telefono": "999333444",
+    "correo": "andrea@vetcare.test",
+    "especialidad": "Medicina felina",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Mateo",
+    "apellidos": "Cabrera",
+    "dni": "40456789",
+    "telefono": "999444555",
+    "correo": "mateo@vetcare.test",
+    "especialidad": "Cirugía y traumatología",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Renata",
+    "apellidos": "Vega",
+    "dni": "40567890",
+    "telefono": "999555666",
+    "correo": "renata@vetcare.test",
+    "especialidad": "Medicina preventiva",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Daniel",
+    "apellidos": "Ortiz",
+    "dni": "40678901",
+    "telefono": "999666777",
+    "correo": "daniel@vetcare.test",
+    "especialidad": "Odontología veterinaria",
+    "estado": "inactivo"
+  },
+  {
+    "nombres": "Juliana",
+    "apellidos": "Soto",
+    "dni": "40000006",
+    "telefono": "988000006",
+    "correo": "juliana@vetcare.test",
+    "especialidad": "Cardiología",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Emilio",
+    "apellidos": "Rivas",
+    "dni": "40000007",
+    "telefono": "988000007",
+    "correo": "emilio@vetcare.test",
+    "especialidad": "Medicina interna",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Claudia",
+    "apellidos": "Paz",
+    "dni": "40000008",
+    "telefono": "988000008",
+    "correo": "claudia@vetcare.test",
+    "especialidad": "Oftalmología",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Federico",
+    "apellidos": "Luna",
+    "dni": "40000009",
+    "telefono": "988000009",
+    "correo": "federico@vetcare.test",
+    "especialidad": "Oncología",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Mónica",
+    "apellidos": "Cano",
+    "dni": "40000010",
+    "telefono": "988000010",
+    "correo": "mónica@vetcare.test",
+    "especialidad": "Etología",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Iván",
+    "apellidos": "Serrano",
+    "dni": "40000011",
+    "telefono": "988000011",
+    "correo": "iván@vetcare.test",
+    "especialidad": "Animales exóticos",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Rosa",
+    "apellidos": "Mendoza",
+    "dni": "40000012",
+    "telefono": "988000012",
+    "correo": "rosa@vetcare.test",
+    "especialidad": "Anestesiología",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Pablo",
+    "apellidos": "Sánchez",
+    "dni": "40000013",
+    "telefono": "988000013",
+    "correo": "pablo@vetcare.test",
+    "especialidad": "Diagnóstico por imagen",
+    "estado": "activo"
+  },
+  {
+    "nombres": "Inés",
+    "apellidos": "Valdez",
+    "dni": "40000014",
+    "telefono": "988000014",
+    "correo": "inés@vetcare.test",
+    "especialidad": "Medicina aviar",
+    "estado": "activo"
+  }
+]

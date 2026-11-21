@@ -1,0 +1,20 @@
+from app import db
+
+class Serializer:
+    def to_dict(self):
+        return {c.name: (getattr(self, c.name).isoformat() if hasattr(getattr(self, c.name), "isoformat") else float(getattr(self, c.name)) if c.type.__class__.__name__ == "DECIMAL" and getattr(self, c.name) is not None else getattr(self, c.name)) for c in self.__table__.columns}
+
+class Cliente(db.Model, Serializer):
+    __tablename__="clientes"; id=db.Column(db.Integer, primary_key=True); nombres=db.Column(db.String(100), nullable=False); apellidos=db.Column(db.String(100), nullable=False); dni=db.Column(db.String(20), unique=True, nullable=False); telefono=db.Column(db.String(30), nullable=False); correo=db.Column(db.String(150)); direccion=db.Column(db.String(255)); fecha_registro=db.Column(db.DateTime, server_default=db.func.now())
+class Veterinario(db.Model, Serializer):
+    __tablename__="veterinarios"; id=db.Column(db.Integer, primary_key=True); nombres=db.Column(db.String(100), nullable=False); apellidos=db.Column(db.String(100), nullable=False); dni=db.Column(db.String(20), unique=True, nullable=False); telefono=db.Column(db.String(30), nullable=False); correo=db.Column(db.String(150)); especialidad=db.Column(db.String(120), nullable=False); estado=db.Column(db.String(20), default="activo")
+class Servicio(db.Model, Serializer):
+    __tablename__="servicios"; id=db.Column(db.Integer, primary_key=True); nombre=db.Column(db.String(120), unique=True, nullable=False); descripcion=db.Column(db.Text); precio=db.Column(db.Numeric(10,2), nullable=False); duracion_minutos=db.Column(db.Integer, nullable=False); estado=db.Column(db.String(20), default="activo")
+class Mascota(db.Model, Serializer):
+    __tablename__="mascotas"; id=db.Column(db.Integer, primary_key=True); cliente_id=db.Column(db.Integer, db.ForeignKey("clientes.id"), nullable=False); nombre=db.Column(db.String(100), nullable=False); especie=db.Column(db.String(60), nullable=False); raza=db.Column(db.String(100)); sexo=db.Column(db.String(20), nullable=False); fecha_nacimiento=db.Column(db.Date); peso=db.Column(db.Numeric(6,2)); color=db.Column(db.String(80)); observaciones=db.Column(db.Text); creado_en=db.Column(db.DateTime, server_default=db.func.now()); cliente=db.relationship("Cliente")
+class Cita(db.Model, Serializer):
+    __tablename__="citas"; id=db.Column(db.Integer, primary_key=True); mascota_id=db.Column(db.Integer, db.ForeignKey("mascotas.id"), nullable=False); veterinario_id=db.Column(db.Integer, db.ForeignKey("veterinarios.id"), nullable=False); servicio_id=db.Column(db.Integer, db.ForeignKey("servicios.id"), nullable=False); fecha=db.Column(db.Date, nullable=False); hora=db.Column(db.Time, nullable=False); motivo=db.Column(db.Text, nullable=False); observaciones=db.Column(db.Text); estado=db.Column(db.String(20), default="Pendiente"); mascota=db.relationship("Mascota"); veterinario=db.relationship("Veterinario"); servicio=db.relationship("Servicio")
+class HistorialClinico(db.Model, Serializer):
+    __tablename__="historial_clinico"; id=db.Column(db.Integer, primary_key=True); mascota_id=db.Column(db.Integer, db.ForeignKey("mascotas.id"), nullable=False); veterinario_id=db.Column(db.Integer, db.ForeignKey("veterinarios.id"), nullable=False); fecha_atencion=db.Column(db.Date, nullable=False); motivo_consulta=db.Column(db.Text, nullable=False); diagnostico=db.Column(db.Text); tratamiento=db.Column(db.Text); observaciones=db.Column(db.Text); mascota=db.relationship("Mascota"); veterinario=db.relationship("Veterinario")
+class Vacuna(db.Model, Serializer):
+    __tablename__="vacunas"; id=db.Column(db.Integer, primary_key=True); mascota_id=db.Column(db.Integer, db.ForeignKey("mascotas.id"), nullable=False); veterinario_id=db.Column(db.Integer, db.ForeignKey("veterinarios.id")); nombre_vacuna=db.Column(db.String(120), nullable=False); fecha_aplicacion=db.Column(db.Date, nullable=False); proxima_dosis=db.Column(db.Date); observaciones=db.Column(db.Text); mascota=db.relationship("Mascota"); veterinario=db.relationship("Veterinario")
