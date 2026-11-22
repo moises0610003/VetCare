@@ -44,7 +44,7 @@ colores = ["Negro","Blanco","Marrón","Atigrado","Dorado","Gris","Canela","Trico
 for i in range(len(mascotas), 270):
     especie, raza, peso_min, peso_max = tipos_mascota[random.randrange(len(tipos_mascota))]
     nacimiento = date(2013, 1, 1) + timedelta(days=random.randint(0, 4300))
-    mascotas.append({"cliente_dni": clientes[i % len(clientes)]["dni"], "nombre":nombres_mascota[i % len(nombres_mascota)], "especie":especie, "raza":raza, "sexo":random.choice(["Macho","Hembra"]), "fecha_nacimiento":str(nacimiento), "peso":round(random.uniform(peso_min, peso_max), 1), "color":random.choice(colores), "observaciones":"Registro ficticio para pruebas de VetCare."})
+    mascotas.append({"cliente_dni": clientes[i % len(clientes)]["dni"], "nombre":nombres_mascota[i % len(nombres_mascota)], "especie":especie, "raza":raza, "sexo":random.choice(["Macho","Hembra"]), "fecha_nacimiento":str(nacimiento), "peso":round(random.uniform(peso_min, peso_max), 2), "color":random.choice(colores), "observaciones":"Registro ficticio para pruebas de VetCare."})
 # Datos sucios a propósito: unos pocos pesos vacíos (solo en mascotas generadas)
 for pos in random.sample(range(15, len(mascotas)), 8):
     mascotas[pos]["peso"] = None
