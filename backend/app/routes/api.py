@@ -21,9 +21,10 @@ def serialize(obj):
     return value
 def clean(data):
     for k in DATE_FIELDS:
-        if data.get(k): data[k]=datetime.strptime(data[k], "%Y-%m-%d").date()
+        if k in data:
+            data[k]=datetime.strptime(data[k], "%Y-%m-%d").date() if data[k] else None
     for k in TIME_FIELDS:
-        if data.get(k): data[k]=datetime.strptime(data[k], "%H:%M").time()
+        if data.get(k): data[k]=datetime.strptime(data[k][:5], "%H:%M").time()
     return data
 def error(message, status=400): return jsonify(error=message),status
 @api.route("/<resource>", methods=["GET","POST"])
