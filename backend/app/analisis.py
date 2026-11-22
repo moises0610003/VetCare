@@ -107,7 +107,9 @@ class AnalizadorClinica:
         return {"total": len(estados), "pendientes": pendientes, "completadas": completadas, "canceladas": canceladas, "ingresos": round(ingresos, 2)}
 
     def citas_por_estado(self):
-        conteo = self.datos["estado"].value_counts()                                # value_counts
+        # Mismos grupos que el KPI de pendientes: todo lo que no está cerrado cuenta como "Pendiente"
+        estados = self.datos["estado"].map(lambda estado: estado if estado in ("Completada", "Cancelada") else "Pendiente")   # map + lambda
+        conteo = estados.value_counts()                                             # value_counts
         return [{"estado": estado, "cantidad": int(cantidad)} for estado, cantidad in conteo.items()]
 
     def citas_por_mes(self):
