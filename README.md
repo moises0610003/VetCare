@@ -67,10 +67,20 @@ La pantalla **Análisis** del menú lateral es un mini dashboard. Todos los cál
 
 | Tema del curso | Dónde se usa |
 |---|---|
-| pandas | `pd.read_sql` y `merge` para unir citas, servicios, mascotas y veterinarios; `isna`, `drop_duplicates` y `to_datetime` en `limpieza()`; `value_counts`, `groupby` y `describe` en los métodos de análisis |
+| pandas | `pd.read_sql` y `merge` para unir citas, servicios, mascotas, veterinarios e historial clínico; `isna`, `drop_duplicates` y `to_datetime` en `limpieza()`; `value_counts`, `groupby` y `describe` en los métodos de análisis (ingresos, diagnósticos, mascotas, horarios y servicios) |
 | numpy | `mean`, `std`, `min` y `max` en `estadisticas_precio()`; `histogram` para las edades y `percentile` para el boxplot de precio por especie |
-| Programación funcional | `map`, `filter`, `lambda` y `reduce` en `kpis()`; `aplicar_a_lista()` recibe otra función como parámetro |
+| Programación funcional | `map`, `filter`, `lambda` y `reduce` en `kpis()`; `filter` y `lambda` también en `ingresos_por_mes()`; `aplicar_a_lista()` recibe otra función como parámetro |
 | POO y herencia | `AnalizadorClinica` calcula todo; `AnalizadorFiltrado` hereda de ella y solo agrega los filtros |
+
+La pantalla se divide en cinco secciones, cada una con su método en `AnalizadorClinica`:
+
+| Sección | Método | Qué muestra |
+|---|---|---|
+| Ventas e ingresos | `ingresos_por_mes()`, `ingresos_por_servicio()` | Ingresos de las citas completadas, mes con más y con menos ingresos y % por servicio |
+| Diagnósticos | `diagnosticos()` | Enfermedad más diagnosticada, casos con %, top 5 en perros y top 5 en gatos |
+| Mascotas | `mascotas()` | Cantidad por especie, top 5 razas y distribución por sexo |
+| Citas | `horarios_demanda()` | Citas por hora del día y promedio de citas por día |
+| Servicios | `servicios()` | Ranking de servicios más y menos solicitados con % de demanda |
 
 Después de cambiar los datasets, ejecuta `python generate_datasets.py` y luego `python seed.py`.
 

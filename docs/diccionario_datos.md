@@ -45,7 +45,7 @@ Describe las columnas de cada archivo de `backend/datasets/`. Los archivos se ge
 | raza | texto | Raza o tipo |
 | sexo | texto | `Macho` o `Hembra` |
 | fecha_nacimiento | fecha | Sirve para calcular la edad |
-| peso | número o vacío | Peso en kg; hay 8 vacíos a propósito para practicar la limpieza |
+| peso | número o vacío | Peso en kg con 2 decimales; hay 8 vacíos a propósito para practicar la limpieza |
 | color | texto | Color del pelaje o plumaje |
 | observaciones | texto | Notas libres |
 
@@ -89,3 +89,16 @@ Datos sucios a propósito: 3 citas aparecen dos veces (misma mascota, día y ser
 | fecha_aplicacion | fecha | Día de la aplicación |
 | proxima_dosis | fecha | Fecha del siguiente refuerzo |
 | observaciones | texto | Notas libres |
+
+## Columnas calculadas en el análisis
+
+Estas columnas no están en los JSON; `analisis.py` las genera al unir las tablas con pandas.
+
+| Columna | Tipo | Descripción |
+|---|---|---|
+| precio | número | Precio del servicio de la cita (viene de `servicios`) |
+| mes | entero | Mes de la cita (1 a 12), sacado de `fecha` |
+| dia_semana | entero | Día de la semana de la cita (0 = lunes) |
+| edad | número | Edad de la mascota en años, calculada desde `fecha_nacimiento` |
+| porcentaje | número | Porcentaje sobre el total, usado en diagnósticos, sexo, servicios e ingresos |
+
