@@ -3,6 +3,7 @@ from flask import Blueprint, jsonify, request
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy import or_, func
 from app import db
+from app.analisis import AnalizadorClinica, AnalizadorFiltrado
 from app.models import Cliente, Mascota, Veterinario, Servicio, Cita, HistorialClinico, Vacuna
 
 api = Blueprint("api", __name__)
@@ -27,6 +28,17 @@ def clean(data):
         if data.get(k): data[k]=datetime.strptime(data[k][:5], "%H:%M").time()
     return data
 def error(message, status=400): return jsonify(error=message),status
+@api.get("/analisis/opciones")
+def analisis_opciones():
+    return jsonify(data=AnalizadorClinica().opciones())
+@api.get("/analisis")
+def analisis():
+    mes=request.args.get("mes",type=int)
+    analizador=AnalizadorFiltrado(request.args.get("especie"),request.args.get("servicio"),mes)
+    return jsonify(data={"kpis":analizador.kpis(),"citas_por_estado":analizador.citas_por_estado(),"citas_por_mes":analizador.citas_por_mes(),
+        "estadisticas_precio":analizador.estadisticas_precio(),"limpieza":analizador.resumen_limpieza,"resumen_estadistico":analizador.resumen_estadistico(),
+        "histograma_edades":analizador.histograma_edades(),"boxplot_precio":analizador.boxplot_precio_por_servicio(),
+        "conclusiones":analizador.conclusiones(),"tabla":analizador.tabla()})
 @api.route("/<resource>", methods=["GET","POST"])
 def collection(resource):
     if resource not in RESOURCES: return error("Módulo no válido",404)
