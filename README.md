@@ -60,3 +60,17 @@ VITE_API_URL=http://localhost:5000/api
 ## Endpoints
 
 `/api/dashboard`, `/api/clientes`, `/api/mascotas`, `/api/veterinarios`, `/api/servicios`, `/api/citas`, `/api/historial` y `/api/vacunas` aceptan JSON y operaciones GET/POST; cada recurso individual acepta GET/PUT/PATCH/DELETE.
+
+## Análisis de datos
+
+La pantalla **Análisis** del menú lateral es un mini dashboard. Todos los cálculos se hacen en Python (`backend/app/analisis.py`) y el frontend solo los dibuja. Los endpoints son `GET /api/analisis` (acepta `?especie=&servicio=&mes=`) y `GET /api/analisis/opciones`. Las columnas de los datasets están en [docs/diccionario_datos.md](docs/diccionario_datos.md).
+
+| Tema del curso | Dónde se usa |
+|---|---|
+| pandas | `pd.read_sql` y `merge` para unir citas, servicios, mascotas y veterinarios; `isna`, `drop_duplicates` y `to_datetime` en `limpieza()`; `value_counts`, `groupby` y `describe` en los métodos de análisis |
+| numpy | `mean`, `std`, `min` y `max` en `estadisticas_precio()`; `histogram` para las edades y `percentile` para el boxplot |
+| Programación funcional | `map`, `filter`, `lambda` y `reduce` en `kpis()`; `aplicar_a_lista()` recibe otra función como parámetro |
+| POO y herencia | `AnalizadorClinica` calcula todo; `AnalizadorFiltrado` hereda de ella y solo agrega los filtros |
+
+Después de cambiar los datasets, ejecuta `python generate_datasets.py` y luego `python seed.py`.
+
