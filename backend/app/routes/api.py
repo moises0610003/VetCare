@@ -38,7 +38,8 @@ def analisis():
     return jsonify(data={"kpis":analizador.kpis(),"citas_por_estado":analizador.citas_por_estado(),"citas_por_mes":analizador.citas_por_mes(),
         "estadisticas_precio":analizador.estadisticas_precio(),"limpieza":analizador.resumen_limpieza,"resumen_estadistico":analizador.resumen_estadistico(),
         "histograma_edades":analizador.histograma_edades(),"boxplot_precio":analizador.boxplot_precio_por_especie(),
-        "conclusiones":analizador.conclusiones(),"tabla":analizador.tabla()})
+        "conclusiones":analizador.conclusiones(),"ingresos_por_mes":analizador.ingresos_por_mes(),"ingresos_por_servicio":analizador.ingresos_por_servicio(),
+        "diagnosticos":analizador.diagnosticos(),"mascotas":analizador.mascotas(),"horarios_demanda":analizador.horarios_demanda(),"servicios":analizador.servicios(),"tabla":analizador.tabla()})
 @api.route("/<resource>", methods=["GET","POST"])
 def collection(resource):
     if resource not in RESOURCES: return error("Módulo no válido",404)

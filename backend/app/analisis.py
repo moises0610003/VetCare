@@ -20,6 +20,14 @@ def redondear(valor):
     return None if pd.isna(valor) else round(float(valor), 2)
 
 
+def conteo_a_lista(conteo, nombre, limite=None):
+    """Convierte un value_counts en lista de diccionarios con cantidad y porcentaje."""
+    total = conteo.sum()
+    if limite:
+        conteo = conteo.head(limite)
+    return [{nombre: indice, "cantidad": int(cantidad), "porcentaje": redondear(cantidad / total * 100)} for indice, cantidad in conteo.items()]
+
+
 def formatear_hora(tiempo):
     """MySQL entrega la hora como timedelta; la pasamos a 'HH:MM'."""
     if isinstance(tiempo, str):
@@ -32,6 +40,8 @@ class AnalizadorClinica:
     """Carga las tablas de MySQL en pandas y calcula los análisis."""
 
     def __init__(self):
+        self.filtro_especie = None
+        self.filtro_mes = None
         self.datos = self._cargar_datos()
         self.resumen_limpieza = self.limpieza()
         self._calcular_edad()
@@ -40,7 +50,7 @@ class AnalizadorClinica:
         # pandas: leer las tablas de MySQL y unirlas con merge
         citas = pd.read_sql("SELECT id, mascota_id, veterinario_id, servicio_id, fecha, hora, estado FROM citas", db.engine)
         servicios = pd.read_sql("SELECT id AS servicio_id, nombre AS servicio, precio FROM servicios", db.engine)
-        mascotas = pd.read_sql("SELECT id AS mascota_id, nombre AS mascota, especie, fecha_nacimiento, peso FROM mascotas", db.engine)
+        mascotas = pd.read_sql("SELECT id AS mascota_id, nombre AS mascota, especie, raza, sexo, fecha_nacimiento, peso FROM mascotas", db.engine)
         veterinarios = pd.read_sql("SELECT id AS veterinario_id, nombres, apellidos FROM veterinarios", db.engine)
 
         veterinarios["veterinario"] = veterinarios["nombres"] + " " + veterinarios["apellidos"]
@@ -162,6 +172,65 @@ class AnalizadorClinica:
         frases.append(f"El {completadas / total * 100:.1f}% de las citas se completó.")
         return frases
 
+    def _completadas(self):
+        return self.datos[self.datos["estado"] == "Completada"]
+
+    def ingresos_por_mes(self):
+        """Ingresos de las citas Completadas por mes, con el mes de mayor y menor ingreso."""
+        ingresos = self._completadas().groupby("mes")["precio"].sum()                 # groupby
+        ingresos = ingresos.reindex(range(1, 13), fill_value=0)
+        meses = [{"mes": MESES[mes - 1][:3], "nombre": MESES[mes - 1], "ingresos": redondear(valor)} for mes, valor in ingresos.items()]
+        con_ingresos = list(filter(lambda fila: fila["ingresos"] > 0, meses))          # filter + lambda
+        if not con_ingresos:
+            return {"meses": meses, "mes_mayor": None, "mes_menor": None}
+        return {"meses": meses, "mes_mayor": max(con_ingresos, key=lambda fila: fila["ingresos"]),
+                "mes_menor": min(con_ingresos, key=lambda fila: fila["ingresos"])}
+
+    def ingresos_por_servicio(self):
+        ingresos = self._completadas().groupby("servicio")["precio"].sum().sort_values(ascending=False)
+        total = ingresos.sum()
+        return [{"servicio": servicio, "ingresos": redondear(valor), "porcentaje": redondear(valor / total * 100)} for servicio, valor in ingresos.items()]
+
+    def diagnosticos(self):
+        """Lee el historial clínico, lo une con mascotas y cuenta los diagnósticos."""
+        historial = pd.read_sql("SELECT mascota_id, fecha_atencion, diagnostico FROM historial_clinico", db.engine)
+        mascotas = pd.read_sql("SELECT id AS mascota_id, especie FROM mascotas", db.engine)
+        tabla = historial.merge(mascotas, on="mascota_id", how="left").dropna(subset=["diagnostico"])
+        tabla["fecha_atencion"] = pd.to_datetime(tabla["fecha_atencion"])
+        if self.filtro_especie:
+            tabla = tabla[tabla["especie"] == self.filtro_especie]
+        if self.filtro_mes:
+            tabla = tabla[tabla["fecha_atencion"].dt.month == self.filtro_mes]
+        if tabla.empty:
+            return {"mas_comun": None, "casos": [], "top_perros": [], "top_gatos": []}
+
+        casos = conteo_a_lista(tabla["diagnostico"].value_counts(), "diagnostico")
+        top_por_especie = lambda especie: conteo_a_lista(tabla[tabla["especie"] == especie]["diagnostico"].value_counts(), "diagnostico", 5)
+        return {"mas_comun": casos[0], "casos": casos, "top_perros": top_por_especie("Perro"), "top_gatos": top_por_especie("Gato")}
+
+    def mascotas(self):
+        """Mascotas atendidas: cantidad por especie, top 5 razas y distribución por sexo."""
+        unicas = self._mascotas_unicas()
+        return {"total": len(unicas),
+                "por_especie": conteo_a_lista(unicas["especie"].value_counts(), "especie"),
+                "top_razas": conteo_a_lista(unicas["raza"].dropna().value_counts(), "raza", 5),
+                "por_sexo": conteo_a_lista(unicas["sexo"].value_counts(), "sexo")}
+
+    def horarios_demanda(self):
+        if self.datos.empty:
+            return {"por_hora": [], "promedio_por_dia": None, "hora_pico": None}
+        horas = self.datos["hora"].str[:2]                                           # "09:30" -> "09"
+        conteo = horas.value_counts().sort_index()
+        por_hora = [{"hora": hora + ":00", "cantidad": int(cantidad)} for hora, cantidad in conteo.items()]
+        dias_con_citas = self.datos["fecha"].nunique()
+        return {"por_hora": por_hora, "promedio_por_dia": redondear(len(self.datos) / dias_con_citas),
+                "dias_con_citas": int(dias_con_citas), "hora_pico": max(por_hora, key=lambda fila: fila["cantidad"])["hora"]}
+
+    def servicios(self):
+        """Ranking de servicios por cantidad de citas y su % de la demanda."""
+        ranking = conteo_a_lista(self.datos["servicio"].value_counts(), "servicio")
+        return {"ranking": ranking, "mas_solicitados": ranking[:5], "menos_solicitados": ranking[::-1][:5]}
+
     def tabla(self):
         filas = self.datos.sort_values(["fecha", "hora"], ascending=False)
         resultado = []
@@ -181,6 +250,8 @@ class AnalizadorClinica:
 class AnalizadorFiltrado(AnalizadorClinica):
     def __init__(self, especie=None, servicio=None, mes=None):
         super().__init__()
+        self.filtro_especie = especie
+        self.filtro_mes = mes
         if especie:
             self.datos = self.datos[self.datos["especie"] == especie]
         if servicio:
