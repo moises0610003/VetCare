@@ -3,7 +3,8 @@ import {Activity,CalendarDays,CheckCircle2,CircleDollarSign,XCircle}from "lucide
 import {Bar,BarChart,CartesianGrid,Cell,ComposedChart,Line,Pie,PieChart,ResponsiveContainer,Tooltip,XAxis,YAxis}from "recharts";
 import {api}from "./services/api";
 
-const colores=["#176bdb","#16bfc4","#ff766b","#805ed4","#f0ad3d"];
+// Un color fijo por estado
+const coloresEstado={Completada:"#16bfc4",Pendiente:"#f0ad3d",Cancelada:"#ff766b"};
 const sinFiltros={especie:"",servicio:"",mes:""};
 const filasPorPagina=50;
 const ver=v=>v??"—";
@@ -99,7 +100,7 @@ export default function Analisis(){
     <Seccion titulo="Citas">
       <div className="dashboard-charts">
         <Panel titulo="Citas por mes" detalle="Tendencia durante el año"><Barras datos={datos?.citas_por_mes||[]} x="mes" nombre="Citas"/></Panel>
-        <Panel titulo="Citas por estado" detalle="Distribución de las citas filtradas"><div className="rechart-box"><ResponsiveContainer width="100%" height="100%"><PieChart><Pie data={datos?.citas_por_estado||[]} dataKey="cantidad" nameKey="estado" cx="50%" cy="47%" innerRadius={48} outerRadius={76} paddingAngle={4} label={({estado,cantidad})=>estado+": "+cantidad}>{(datos?.citas_por_estado||[]).map((x,i)=><Cell key={x.estado} fill={colores[i%colores.length]}/>)}</Pie><Tooltip/></PieChart></ResponsiveContainer></div></Panel>
+        <Panel titulo="Citas por estado" detalle="Distribución de las citas filtradas"><div className="rechart-box"><ResponsiveContainer width="100%" height="100%"><PieChart><Pie data={datos?.citas_por_estado||[]} dataKey="cantidad" nameKey="estado" cx="50%" cy="47%" innerRadius={48} outerRadius={76} paddingAngle={4} label={({estado,cantidad})=>estado+": "+cantidad}>{(datos?.citas_por_estado||[]).map(x=><Cell key={x.estado} fill={coloresEstado[x.estado]}/>)}</Pie><Tooltip/></PieChart></ResponsiveContainer></div></Panel>
       </div>
       <div className="dashboard-charts">
         <Panel titulo="Citas por hora del día" detalle={horarios?.promedio_por_dia?`Promedio de ${horarios.promedio_por_dia} citas por día · hora con más citas: ${horarios.hora_pico}`:""}><Barras datos={horarios?.por_hora||[]} x="hora" nombre="Citas" color="#f0ad3d"/></Panel>
