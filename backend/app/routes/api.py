@@ -37,7 +37,7 @@ def analisis():
     analizador=AnalizadorFiltrado(request.args.get("especie"),request.args.get("servicio"),mes)
     return jsonify(data={"kpis":analizador.kpis(),"citas_por_estado":analizador.citas_por_estado(),"citas_por_mes":analizador.citas_por_mes(),
         "estadisticas_precio":analizador.estadisticas_precio(),"limpieza":analizador.resumen_limpieza,"resumen_estadistico":analizador.resumen_estadistico(),
-        "histograma_edades":analizador.histograma_edades(),"boxplot_precio":analizador.boxplot_precio_por_servicio(),
+        "histograma_edades":analizador.histograma_edades(),"boxplot_precio":analizador.boxplot_precio_por_especie(),
         "conclusiones":analizador.conclusiones(),"tabla":analizador.tabla()})
 @api.route("/<resource>", methods=["GET","POST"])
 def collection(resource):

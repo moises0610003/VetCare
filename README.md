@@ -68,7 +68,7 @@ La pantalla **Análisis** del menú lateral es un mini dashboard. Todos los cál
 | Tema del curso | Dónde se usa |
 |---|---|
 | pandas | `pd.read_sql` y `merge` para unir citas, servicios, mascotas y veterinarios; `isna`, `drop_duplicates` y `to_datetime` en `limpieza()`; `value_counts`, `groupby` y `describe` en los métodos de análisis |
-| numpy | `mean`, `std`, `min` y `max` en `estadisticas_precio()`; `histogram` para las edades y `percentile` para el boxplot |
+| numpy | `mean`, `std`, `min` y `max` en `estadisticas_precio()`; `histogram` para las edades y `percentile` para el boxplot de precio por especie |
 | Programación funcional | `map`, `filter`, `lambda` y `reduce` en `kpis()`; `aplicar_a_lista()` recibe otra función como parámetro |
 | POO y herencia | `AnalizadorClinica` calcula todo; `AnalizadorFiltrado` hereda de ella y solo agrega los filtros |
 

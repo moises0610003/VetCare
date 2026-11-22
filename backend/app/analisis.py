@@ -130,11 +130,11 @@ class AnalizadorClinica:
         cantidades, bordes = np.histogram(edades, bins=np.arange(0, limite + 1, 2))   # numpy: histogram
         return [{"rango": f"{int(bordes[i])}-{int(bordes[i + 1])}", "cantidad": int(cantidades[i])} for i in range(len(cantidades))]
 
-    def boxplot_precio_por_servicio(self):
+    def boxplot_precio_por_especie(self):
         resultado = []
-        for servicio, grupo in self.datos.groupby("servicio"):
+        for especie, grupo in self.datos.groupby("especie"):
             q1, mediana, q3 = np.percentile(grupo["precio"], [25, 50, 75])
-            resultado.append({"servicio": servicio, "minimo": redondear(grupo["precio"].min()), "q1": redondear(q1), "mediana": redondear(mediana),
+            resultado.append({"especie": especie, "minimo": redondear(grupo["precio"].min()), "q1": redondear(q1), "mediana": redondear(mediana),
                               "q3": redondear(q3), "maximo": redondear(grupo["precio"].max()), "citas": len(grupo)})
         return resultado
 
