@@ -4,6 +4,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy import or_, func
 from app import db
 from app.analisis import AnalizadorClinica, AnalizadorFiltrado
+from app.carga import CargadorExcel
 from app.models import Cliente, Mascota, Veterinario, Servicio, Cita, HistorialClinico, Vacuna
 
 api = Blueprint("api", __name__)
@@ -40,6 +41,12 @@ def analisis():
         "histograma_edades":analizador.histograma_edades(),"boxplot_precio":analizador.boxplot_precio_por_especie(),
         "conclusiones":analizador.conclusiones(),"ingresos_por_mes":analizador.ingresos_por_mes(),"ingresos_por_servicio":analizador.ingresos_por_servicio(),
         "diagnosticos":analizador.diagnosticos(),"mascotas":analizador.mascotas(),"horarios_demanda":analizador.horarios_demanda(),"servicios":analizador.servicios(),"tabla":analizador.tabla()})
+@api.post("/carga")
+def carga():
+    archivo=request.files.get("archivo")
+    if not archivo or not archivo.filename.lower().endswith(".xlsx"):return error("Sube un archivo Excel .xlsx")
+    try:return jsonify(data=CargadorExcel(archivo).procesar(),message="Carga terminada")
+    except ValueError as e:return error(str(e))
 @api.route("/<resource>", methods=["GET","POST"])
 def collection(resource):
     if resource not in RESOURCES: return error("Módulo no válido",404)
