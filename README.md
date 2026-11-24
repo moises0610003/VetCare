@@ -99,3 +99,5 @@ El Excel puede tener una hoja `mascotas` y/o una hoja `citas`, con las columnas 
 
 Después de limpiar, una fila se omite (y se informa el motivo) si el cliente, la mascota, el veterinario o el servicio no existen, si el veterinario ya tiene una cita a esa fecha y hora, o si ya existe en la base. Si se vuelve a subir el mismo Excel no se duplica nada.
 
+Lo mismo pasa al registrar una mascota a mano: si se deja el peso vacío, se rellena con la mediana de su especie.
+

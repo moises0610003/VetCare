@@ -106,7 +106,7 @@ Estas columnas no están en los JSON; `analisis.py` las genera al unir las tabla
 
 Es el archivo que se sube en la pantalla **Carga de datos**. Usa las mismas columnas que `mascotas.json` y `citas.json`; los nulos y los duplicados se limpian al subirlo.
 
-**Hoja `mascotas`:** cliente_dni, nombre, especie, raza, sexo, fecha_nacimiento, peso, color, observaciones. Son obligatorios cliente_dni, nombre, especie y sexo (`Macho` o `Hembra`). El peso vacío se rellena con la mediana de la especie.
+**Hoja `mascotas`:** cliente_dni, nombre, especie, raza, sexo, fecha_nacimiento, peso, color, observaciones. Son obligatorios cliente_dni, nombre, especie y sexo (`Macho` o `Hembra`). El peso vacío se rellena con la mediana de la especie, tanto al subir el Excel como al registrar una mascota a mano.
 
 **Hoja `citas`:** cliente_dni, mascota_nombre, veterinario_dni, servicio_nombre, fecha, hora (`HH:MM`), motivo, observaciones, estado. El cliente, la mascota, el veterinario y el servicio deben existir ya en la base. Un estado vacío pasa a `Pendiente` y un motivo vacío a `Sin motivo registrado`.
 

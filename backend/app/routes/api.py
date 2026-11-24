@@ -1,4 +1,5 @@
 from datetime import date, datetime
+from statistics import median
 from flask import Blueprint, jsonify, request
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy import or_, func
@@ -28,6 +29,10 @@ def clean(data):
     for k in TIME_FIELDS:
         if data.get(k): data[k]=datetime.strptime(data[k][:5], "%H:%M").time()
     return data
+def peso_tipico(especie):
+    """Mediana del peso de las mascotas de esa especie; None si todavía no hay datos."""
+    pesos=[float(p) for (p,) in db.session.query(Mascota.peso).filter(Mascota.especie==especie,Mascota.peso.isnot(None)).all()]
+    return round(median(pesos),2) if pesos else None
 def error(message, status=400): return jsonify(error=message),status
 @api.get("/analisis/opciones")
 def analisis_opciones():
@@ -61,8 +66,11 @@ def collection(resource):
     data=request.get_json(silent=True) or {}
     missing=[x for x in required if data.get(x) in (None,"")]
     if missing:return error("Campos obligatorios: "+", ".join(missing))
+    estimado=False
+    if resource=="mascotas" and data.get("peso") in (None,""):
+        data["peso"]=peso_tipico(data.get("especie")); estimado=data["peso"] is not None
     try:
-        entity=Model(**clean(data)); db.session.add(entity); db.session.commit(); return jsonify(data=serialize(entity),message="Registro creado"),201
+        entity=Model(**clean(data)); db.session.add(entity); db.session.commit(); return jsonify(data=serialize(entity),message="Registro creado"+(" (peso estimado con la mediana de su especie)" if estimado else "")),201
     except (ValueError,TypeError): return error("Formato de fecha u hora inválido")
     except IntegrityError: db.session.rollback(); return error("El registro viola una restricción o está duplicado",409)
 @api.route("/<resource>/<int:item_id>", methods=["GET","PUT","PATCH","DELETE"])
