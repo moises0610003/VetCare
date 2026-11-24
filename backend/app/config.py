@@ -5,4 +5,5 @@ class Config:
         user=os.getenv("DB_USER", "root"), password=os.getenv("DB_PASSWORD", ""), host=os.getenv("DB_HOST", "localhost"),
         port=os.getenv("DB_PORT", "3306"), name=os.getenv("DB_NAME", "veterinaria_db"))
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    MAX_CONTENT_LENGTH = 5 * 1024 * 1024   # los Excel de carga pueden pesar hasta 5 MB
     DEBUG = os.getenv("FLASK_DEBUG", "false").lower() == "true"
