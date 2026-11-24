@@ -102,3 +102,11 @@ Estas columnas no están en los JSON; `analisis.py` las genera al unir las tabla
 | edad | número | Edad de la mascota en años, calculada desde `fecha_nacimiento` |
 | porcentaje | número | Porcentaje sobre el total, usado en diagnósticos, sexo, servicios e ingresos |
 
+## Excel de carga
+
+Es el archivo que se sube en la pantalla **Carga de datos**. Usa las mismas columnas que `mascotas.json` y `citas.json`; los nulos y los duplicados se limpian al subirlo.
+
+**Hoja `mascotas`:** cliente_dni, nombre, especie, raza, sexo, fecha_nacimiento, peso, color, observaciones. Son obligatorios cliente_dni, nombre, especie y sexo (`Macho` o `Hembra`). El peso vacío se rellena con la mediana de la especie.
+
+**Hoja `citas`:** cliente_dni, mascota_nombre, veterinario_dni, servicio_nombre, fecha, hora (`HH:MM`), motivo, observaciones, estado. El cliente, la mascota, el veterinario y el servicio deben existir ya en la base. Un estado vacío pasa a `Pendiente` y un motivo vacío a `Sin motivo registrado`.
+

@@ -84,3 +84,18 @@ La pantalla se divide en cinco secciones, cada una con su método en `Analizador
 
 Después de cambiar los datasets, ejecuta `python generate_datasets.py` y luego `python seed.py`.
 
+## Carga de datos desde Excel
+
+El menú **Carga de datos** permite subir un Excel `.xlsx`. Python lo limpia con pandas y solo guarda en MySQL las filas buenas (`backend/app/carga.py`, clase `CargadorExcel`, endpoint `POST /api/carga`).
+
+El Excel puede tener una hoja `mascotas` y/o una hoja `citas`, con las columnas que se describen en [docs/diccionario_datos.md](docs/diccionario_datos.md). Las dos hojas se limpian así:
+
+| Paso | pandas | Qué hace |
+|---|---|---|
+| Contar nulos | `isna` | Muestra cuántos vacíos hay por columna |
+| Convertir fechas | `to_datetime` | Pasa el texto a fecha; si no es válida queda vacía |
+| Quitar duplicados | `duplicated` | Mascotas: mismo cliente y nombre. Citas: misma mascota, servicio y fecha |
+| Rellenar nulos | `fillna` | Peso vacío: mediana de su especie. Cita sin estado: "Pendiente". Cita sin motivo: "Sin motivo registrado" |
+
+Después de limpiar, una fila se omite (y se informa el motivo) si el cliente, la mascota, el veterinario o el servicio no existen, si el veterinario ya tiene una cita a esa fecha y hora, o si ya existe en la base. Si se vuelve a subir el mismo Excel no se duplica nada.
+
