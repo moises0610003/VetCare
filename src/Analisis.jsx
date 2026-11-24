@@ -58,6 +58,9 @@ export default function Analisis(){
       <Filtro etiqueta="Mes" valor={filtros.mes} opciones={opciones.meses.map(m=>({valor:m.valor,nombre:m.nombre}))} cambiar={cambiar("mes")}/>
       <button className="filter-btn" onClick={()=>setFiltros(sinFiltros)}>Limpiar filtros</button>
     </section>
+    <article className="panel" style={{margin:"0 0 18px"}}><div className="panel-heading"><div><h2>Limpieza de datos</h2><p>Resumen de lo que se limpió con pandas antes de calcular</p></div></div>
+        {limpieza&&<ul className="lista-analisis"><li>Filas leídas: <b>{limpieza.filas_antes}</b> · filas finales: <b>{limpieza.filas_despues}</b></li><li>Duplicados eliminados: <b>{limpieza.duplicados_eliminados}</b></li><li>Fechas convertidas con to_datetime: <b>{limpieza.fechas_convertidas.join(", ")}</b></li><li>Valores nulos: {Object.keys(limpieza.nulos_por_columna).length?Object.entries(limpieza.nulos_por_columna).map(([c,n])=><b key={c}>{c}: {n} </b>):<b>ninguno</b>}</li></ul>}
+    </article>
 
     <Seccion titulo="Ventas e ingresos">
       <div className="dashboard-charts">
@@ -104,11 +107,8 @@ export default function Analisis(){
       </div>
       <div className="dashboard-charts">
         <Panel titulo="Citas por hora del día" detalle={horarios?.promedio_por_dia?`Promedio de ${horarios.promedio_por_dia} citas por día · hora con más citas: ${horarios.hora_pico}`:""}><Barras datos={horarios?.por_hora||[]} x="hora" nombre="Citas" color="#f0ad3d"/></Panel>
-        <Panel titulo="Limpieza de datos" detalle="Resumen de lo que se limpió con pandas">
-          {limpieza&&<ul className="lista-analisis"><li>Filas leídas: <b>{limpieza.filas_antes}</b> · filas finales: <b>{limpieza.filas_despues}</b></li><li>Duplicados eliminados: <b>{limpieza.duplicados_eliminados}</b></li><li>Fechas convertidas con to_datetime: <b>{limpieza.fechas_convertidas.join(", ")}</b></li><li>Valores nulos: {Object.keys(limpieza.nulos_por_columna).length?Object.entries(limpieza.nulos_por_columna).map(([c,n])=><b key={c}>{c}: {n} </b>):<b>ninguno</b>}</li></ul>}
-        </Panel>
+        <Panel titulo="Conclusiones" detalle="Frases generadas con los datos filtrados"><ul className="lista-analisis">{(datos?.conclusiones||[]).map(c=><li key={c}>{c}</li>)}</ul></Panel>
       </div>
-      <Panel titulo="Conclusiones" detalle="Frases generadas con los datos filtrados"><ul className="lista-analisis">{(datos?.conclusiones||[]).map(c=><li key={c}>{c}</li>)}</ul></Panel>
       <Panel titulo="Dataset filtrado" detalle={`Mostrando ${Math.min(visibles,tabla.length)} de ${tabla.length} citas`}>
         <Tabla columnas={[["id","ID"],["fecha","Fecha"],["mascota","Mascota"],["especie","Especie"],["servicio","Servicio"],["estado","Estado"]]} filas={tabla.slice(0,visibles)}/>
         {visibles<tabla.length&&<button className="filter-btn" onClick={()=>setVisibles(v=>v+filasPorPagina)}>Ver más</button>}
